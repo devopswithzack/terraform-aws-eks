@@ -2,37 +2,17 @@
 variable "region" {
   description = "name of the region"
   type        = string
-  default     = "ap-southeast-1"
+  default     = "us-east-1"
 }
 
-variable "cidr_vpc" {
-  description = "CIDR of the VPC"
-  type        = string
-  default     = ""
+variable "business_division" {
+  default = "hr"
+  description = "Organization Unit"
 }
 
-variable "vpc_id" {
-  description = "VPC ID"
-  type        = string
-  default     = ""
-}
-
-variable "cluster_name" {
-  description = "name of the cluster"
-  type        = string
-  default     = ""
-}
-
-variable "worker_group_name" {
-  description = "name of the worker group name"
-  type        = string
-  default     = ""
-}
-
-variable "workers_role_name" {
-  description = "name of the worker group name"
-  type        = string
-  default     = ""
+variable "environment" {
+  default = "dev"
+  description = "Application environment"
 }
 
 variable "iam_role_arn" {
